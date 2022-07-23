@@ -1,0 +1,659 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    /*overflow-x: hidden;*/
+    }
+
+  .max-width{
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
+  
+/*navbar*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family:'Cinzel Decorative';
+}
+.navbar.sticky{
+    padding: 10px 0;
+    background:rgba(41, 189, 28, 0.411);
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    top: 30px; 
+    left: 30px;
+    width: 85.1px;
+    height: 55px;   
+} 
+ .navbar .menu li {
+    list-style: none;
+    display: inline-block;
+} 
+.navbar .menu li a{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover,
+.navbar .menu li a:active
+{
+    color:rgba(41, 189, 28, 1)
+}
+.navbar  #rose li a:hover,
+.navbar  #rose li a:active
+{
+  color:#a61d7bad;
+}
+
+.navbar  #yellow li a:hover,
+.navbar  #yellow li a:active
+{
+  color:  rgba(41, 189, 28,);
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Home Section*/
+.home{
+    display: flex;
+    height: 100vh ;
+    color: #000;
+    padding: 100px 0px;
+    min-height: 350px;
+    background-color: black;
+}
+#plogo path:nth-child(1){
+  stroke-dasharray: 3819.4239501953125px;
+  stroke-dashoffset: 3819.4239501953125px;
+  animation: logo-intro 3s ease-in-out forwards ;
+}
+#plogo path:nth-child(2){
+  stroke-dasharray: 2819.4239501953125px;
+  stroke-dashoffset: 2819.4239501953125px; 
+  animation: logo-intro 3.3s ease-in-out forwards;
+}
+#plogo path:nth-child(3){
+  stroke-dasharray: 3819.4239501953125px;
+  stroke-dashoffset: 3819.4239501953125px;
+  animation: logo-intro 3.1s ease-in-out forwards;
+}
+#plogo path:nth-child(4){
+  stroke-dasharray: 2819.4239501953125px;
+  stroke-dashoffset: 2819.4239501953125px;
+  animation: logo-intro 3.5s ease-in-out forwards;
+}
+#plogo path:nth-child(5){
+  stroke-dasharray: 2819.4239501953125px;
+  stroke-dashoffset: 2819.4239501953125px;
+  animation: logo-intro 3.5s ease-in-out forwards;
+}
+#plogo path:nth-child(6){
+  stroke-dasharray: 3819.4239501953125px;
+  stroke-dashoffset: 2819.4239501953125px;
+  animation: logo-intro 3.5s ease-in-out forwards;
+}
+
+
+/*ManinProjects*/
+.project{
+  background: #000000;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+	display: flex;
+}
+
+.projecth1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1b03a38d; 
+  font-size: 250px;
+  font-family: 'Ilyas';
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  
+}
+
+.img {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  transition-timing-function: ease-out;
+}
+
+.img-1 {
+  background: url(landing1.png) no-repeat 50% 50%;
+  background-size: 450px;
+  transition-duration: 1000ms;
+}
+
+.img-2 {
+  background: url(landing2.png) no-repeat 50% 50%;
+  background-size: 450px;
+  transition-duration: 800ms;
+}
+
+.img-3 {
+  background: url(landing3.png) no-repeat 50% 50%;
+  background-size: 450px;
+  transition-duration: 600ms;
+}
+
+.img-4 {
+  background: url(landing4.png) no-repeat 50% 50%;
+  background-size: 450px;
+  transition-duration: 400ms;
+}
+
+.img-5 {
+  background: url(landing2.png) no-repeat 50% 50%;
+  background-size: 450px;
+  transition-duration: 200ms;
+} 
+
+
+
+/*About Section */
+
+.section-container{
+  padding: 0;
+  --bs-gutter-x: 1.1rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: #000000;
+}
+.section-container .columns{
+flex:0 0 auto;
+width:50%;
+}
+.section-container .columns.image
+{ 
+background-image: url(Images/Angle.svg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+height: 770px;
+width: 520px;
+}
+.section-container .columns.content .content-container
+{
+padding:150px 50px;
+}
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:50px;
+margin-bottom:20px;
+color:rgb(118, 189, 112)
+}
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:25px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+color:rgb(153, 179, 151)
+}
+
+ /* MANIFEST3 */  
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+section.page3{
+    padding: 100px 0;
+    background-color: rgb(255, 255, 255);
+}
+.page3 .maincontainer{
+    position: sticky;
+    width: 350px;
+    height: 390px;
+    background: none;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .page3 .thecard{
+    position: relative;
+    top: 150px;
+    left: 0;
+    width: 200%;
+    height: 130%;
+    border-radius: 70px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .page3 .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+  .page3 .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #000000;
+    
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .page3 .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center; 
+    transform: rotateY(180deg); 
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .page3 .thefront h1 {
+    font-family: 'cnizel';
+    padding: 100px;
+    font-size: 60px;
+    text-align: center;
+    color: rgba(41, 189, 28, 1);
+  }
+  .page3 .thefront h1 .passion {
+    font-family: 'cnizel';
+    padding: 100px;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color: rgba(41, 189, 28, 1);
+  }
+
+  .page3 .thefront p {
+    font-family: 'cnizel';
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(52, 84, 49);
+  }
+  .manifest1 {
+    font-family: 'cnizel';
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    color: rgba(41, 189, 28, 1);
+  }
+  .manifest11{
+    font-family: 'cnizel';
+    padding: 5px;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+  }
+  .mintext{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+/*Contact section*/
+.contact{
+  display: flex;
+  height: 100vh ;
+  color: rgb(239, 239, 239);
+  background-color: black;
+}
+.svgcontact{
+  text-align: center;
+  font-size: 4vw;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.massage {
+  margin-top: 3em;
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  
+}
+.massage .smm {
+ position: relative;
+  top:   0.3px;
+  font-size:6vw;
+  color: #A61D7A;
+  animation: bounce 0.5s infinite alternate;
+}
+
+
+.massage span:nth-child(2) {
+  animation-delay: 0.03s;
+}
+.massage span:nth-child(3) {
+  animation-delay: 0.04s;
+}
+.massage span:nth-child(4) {
+  animation-delay: 0.05s;
+}
+.massage span:nth-child(5) {
+  animation-delay: 0.06s;
+}
+.massage span:nth-child(6) {
+  animation-delay: 0.08s;
+}
+.massage span:nth-child(7) {
+  animation-delay: 0.09s;
+}
+.massage span:nth-child(8) {
+  animation-delay: 0.1s;
+}
+.massage span:nth-child(9) {
+  animation-delay: 0.13s;
+}
+.massage span:nth-child(10) {
+  animation-delay: 0.15s;
+}
+.massage span:nth-child(11) {
+  animation-delay: 0.2s;
+}
+.massage span:nth-child(12) {
+  animation-delay: 0.3s;
+}
+.massage span:nth-child(13) {
+  animation-delay: 0.4s;
+}
+
+
+  /*responsive media query start*/
+  /*NAVBAR*/
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 30%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li { 
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .3rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .about .about-content.column{
+        width: 50%;
+    }
+}
+
+/*HOME*/
+@media (max-width: 400px) {
+  svg{
+display:none
+  }  
+  .home {
+        display: flex;
+        background: url(Images/Group\ 51.svg) no-repeat;
+        height: 80vh ;
+        color: #000;
+        min-height: 400px;
+        align-content: center;
+        background-color: black;}
+
+    
+        .navbar-links ul {
+            width: 90%;
+            flex-direction: column;
+        }
+    
+    
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+    
+  
+}
+
+/*ABOUT*/
+@media (max-width:767px){
+.section-container
+{
+flex-flow:row wrap;
+}
+.section-container .columns.image{
+display:block;
+order:1;
+width:100%;
+height:450px;
+}
+.section-container .columns.content
+{
+display:block;
+order:2;
+width:100%;
+}
+.section-container .columns.content .content-container
+{
+padding:20px 35px;
+}
+.section-container .columns.content .content-container h5
+{
+margin-bottom:5px;
+font-size:30px;
+}
+.section-container .columns.content .content-container p
+{
+
+font-size:16px;
+}
+
+/*MANIFEST*/
+@media (max-width:767px){
+  .page3 .thecard{
+      width: 100%;
+      left: 150px;
+    }
+    .page3 .thefront h1 {
+      padding: 50px; 
+    }
+    .page3 .thefront h1 .passion {
+      font-size: 50px;
+      padding: 30px;
+    }
+  }
+/*Contact*/
+@media (max-width:767px){
+
+  .svgcontact{
+    font-size:6vw;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .massage {
+    margin-top: 3em;
+    text-align: center;
+    margin-top: 75%;  
+  }
+  .massage .smm {
+    font-size:7vw;
+
+  }
+  }
+}
+
+/*Project responsive*/
+@media (max-width:600px){
+  body .project{
+    overflow: hidden;
+    }
+    .img {
+      position: absolute;
+      width: 200px;
+      height: 250px;
+      transition-timing-function: ease-out;
+    }
+
+  .navbar-links {
+      display: none;
+      width: 50%;
+  }
+
+  .navbar-links ul {
+     
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .4rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+  .projecth1 {
+    font-size: 100px;
+  }
+    }
+    @media (max-width:1200px){ 
+.projecth1 {
+      font-size: 200px;
+    }    
+  }
+  @media (max-width:1000px){ 
+    .projecth1 {
+          font-size: 160px;
+        }    
+      }
+ @media (max-width:800px){ 
+        .projecth1 {
+              font-size: 120px;
+            }    
+          }
+@media (max-width:600px){ 
+ .projecth1 {
+   font-size: 70px;
+    }    
+}
+@media (max-width:600px){
+.manifest1 {
+  font-family: 'cnizel';
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: rgba(41, 189, 28, 1);
+}
+.manifest11{
+  font-family: 'cnizel';
+  padding: 5px;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: left;
+}
+.mintext{
+  padding: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: left;
+}}  
+/*FOR LOGO INTRO*/
+  @keyframes logo-intro  {
+    to{ stroke-dashoffset: 0%;
+    }
+  }
+
+  @keyframes logo-intro {
+    to{ stroke-dashoffset: 0%;
+    }
+  }
+  /*For page transiotion*/
+
+ 
+  /*for keep in touch*/
+  @keyframes bounce {
+    100% {
+      top: -20px;
+    
+    }
+  }
